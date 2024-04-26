@@ -5,7 +5,6 @@
 
 .container {
     display: flex;
-    height: 100vh;
 }
 
 .navbar-side {
@@ -16,16 +15,9 @@
     font-size: 20px;
     font-weight: 300;
     font-style: normal;
+    height: 100vh;
+    position: fixed;
 }
-
-/* .main {
-    margin-top: 0;
-    width: 85vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-} */
 
 .navbar-side ul li {
     padding: 20px 0;
@@ -34,12 +26,13 @@
 
 .navbar-side ul li a {
     text-decoration: none;
-    color:orange;
+    color: orange;
 }
 
 
 .information {
     height: 100vh;
+    margin-left: 150px;
     width: 93vw;
     background-color: #0f0f0f;
     z-index: 10;
@@ -78,87 +71,157 @@
     padding-left: 20px;
 }
 
-.contact-form{
-    padding-top: 30px;
-    padding-left: 15px;
+.form{
+    margin-left: 170px;
+    background-color: #0f0f0f;
+    width: 100vw;
+    height: 100vh;
+
+}
+.contact-form {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 30px;
+    color: white;
 }
 
-.contact-form div{
+
+.contact-form div {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form h1{
+.contact-form h1 {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
-    font-style: normal; 
+    font-style: normal;
 }
 
-.contact-form .contact-1{
+.contact-form .contact-1 {
     padding: 20px 0;
 }
 
-.contact-1 #maildisclaimer{
+.contact-1 #maildisclaimer {
     padding-top: 10px;
     font-size: 12px;
     color: grey;
 }
 
-.contact-form {
-     margin: 30px 0;
-}
-
-.contact-form div input{
-    border: 2px solid rgb(99, 98, 98);
+.contact-form div input {
+    border: 2px solid orange;
     border-radius: 4px;
     padding: 5px;
+    width: 20vw;
 }
 
-.contact-form button{
+.contact-form button {
     padding: 8px;
     margin-top: 15px;
     border-radius: 3px;
     border: 2px solid rgba(3, 15, 20, 0.925);
-    background-color: rgba(3, 15, 20, 0.925);
-    color: white;
+    background-color: orange;
+    color: rgba(3, 15, 20, 0.925);
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 15px;
 }
 
-.skills .progressBar{
-    background-color: rgba(3, 15, 20, 0.925);
+.skills .progressBar {
+    background-color: rgba(95, 45, 16, 0.925);
     height: 5px;
     width: 200px;
     padding: 3px;
     border-radius: 13px;
+    border: 1px solid orange;
 }
 
-.skills .progressBar .t8{
+.skills .progressBar .t8 {
     width: 80%;
     height: 100%;
-    background-color: orange ;
+    background-color: orange;
     border-radius: 13px;
 }
 
-.skills .progressBar .t9{
+.skills .progressBar .t9 {
     width: 180px;
     height: 5px;
     background-color: orange;
     border-radius: 13px;
 }
 
-.skills .progressBar .t6{
+.skills .progressBar .t6 {
     width: 120px;
     height: 5px;
     background-color: orange;
     border-radius: 13px;
 }
 
-.skills{
+.skills {
     padding: 30px;
+}
+
+.about-main {
+    background-color: #0f0f0f;
+    color: white;
+    margin-left: 170px;
+}
+
+.about-main .intro p {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.about-main .skills h2 {
+    padding-bottom: 20px;
+    text-decoration: underline orange;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.about-main .skills ul li {
+    padding-bottom: 10px;
+}
+
+.skills ul li div p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.about-main h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    padding-left: 30px;
+    text-decoration: underline orange;
+}
+
+.projects .proj {
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid orange;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.projects div {
+    /* padding-top: 20px; */
 }
