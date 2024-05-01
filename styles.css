@@ -59,6 +59,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 80px;
+    color: orangered;
 }
 
 .information .desc {
@@ -209,8 +210,8 @@
 .projects .proj {
     margin-top: 20px;
     margin-left: 30px;
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 300px;
     border: 1px solid orange;
 }
 
@@ -222,6 +223,17 @@
     justify-content: space-evenly;
 }
 
-.projects div {
-    /* padding-top: 20px; */
+.proj img{
+    width: 300px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details a {
+    text-decoration: none;
+    color: orange;
 }
