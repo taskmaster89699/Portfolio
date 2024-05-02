@@ -32,7 +32,7 @@
 
 .information {
     height: 100vh;
-    margin-left: 150px;
+    margin-left: 170px;
     width: 93vw;
     background-color: #0f0f0f;
     z-index: 10;
@@ -212,7 +212,8 @@
     margin-left: 30px;
     height: 180px;
     width: 300px;
-    border: 1px solid orange;
+    border: 2px solid orange;
+    border-radius: 10px;
 }
 
 .projects {
@@ -225,6 +226,7 @@
 
 .proj img{
     width: 300px;
+    border-radius: 10px 10px 0 0;
 }
 
 .details{
@@ -236,4 +238,43 @@
 .details a {
     text-decoration: none;
     color: orange;
+}
+
+.ham{
+  position: absolute; 
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+.cross{
+   position: absolute; 
+   top: 8px;
+   left: 140px;
+   z-index: 1;
+}
+
+/* @media (max-width: 1130px){
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1130px){
+    .projects{
+        display: grid;
+        grid-template-columns: 150px;
+    }
+
+    .projects .proj{
+        margin-left: 10px;
+    } */
+    /* .navbar-side{
+        width: 100px;
+    }
+
+    .about-main{
+        margin-left: 100px;
+    } */
 }
