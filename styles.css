@@ -3,20 +3,26 @@
     padding: 0;
 }
 
+body {
+    background-color: #0f0f0f;
+}
+
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .navbar-side {
     width: 150px;
-    background-color: rgba(3, 15, 20, 0.925);
+    background-color: rgb(7, 28, 37);
     padding: 70px 10px;
     font-family: "Kanit", sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 300;
     font-style: normal;
     height: 100vh;
     position: fixed;
+    transition: transform 0.3s ease-in;
 }
 
 .navbar-side ul li {
@@ -31,7 +37,6 @@
 
 
 .information {
-    height: 100vh;
     margin-left: 170px;
     width: 93vw;
     background-color: #0f0f0f;
@@ -44,7 +49,7 @@
 
 .information .info {
     font-family: "Kanit", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 300;
     font-style: normal;
     justify-content: center;
@@ -58,7 +63,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 80px;
+    font-size: 5rem;
     color: orangered;
 }
 
@@ -67,23 +72,23 @@
     font-weight: 500;
     font-style: normal;
     position: relative;
-    font-size: 25px;
+    font-size: 1.8rem;
     top: 20px;
     padding-left: 20px;
 }
 
-.form{
-    margin-left: 170px;
+.form {
+    margin-top:80px;
     background-color: #0f0f0f;
     width: 100vw;
     height: 100vh;
-
+    margin-left: 80px;
 }
+
 .contact-form {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 30px;
     color: white;
 }
 
@@ -97,15 +102,21 @@
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 .contact-form .contact-1 {
     padding: 20px 0;
 }
 
+.contact-form label{
+    font-size: 1rem;
+}
+
 .contact-1 #maildisclaimer {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 0.8rem;
     color: grey;
 }
 
@@ -118,15 +129,20 @@
 
 .contact-form button {
     padding: 8px;
-    margin-top: 15px;
-    border-radius: 3px;
+    margin-top: 25px;
+    border-radius: 5px;
     border: 2px solid rgba(3, 15, 20, 0.925);
     background-color: orange;
     color: rgba(3, 15, 20, 0.925);
     font-family: "Kanit", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 1rem;
+}
+
+.contact-form div input:focus{
+    background-color:rgb(241, 195, 108);
+    border:2px solid orange;
 }
 
 .skills .progressBar {
@@ -166,7 +182,7 @@
 .about-main {
     background-color: #0f0f0f;
     color: white;
-    margin-left: 170px;
+    margin-left: 80px;
 }
 
 .about-main .intro p {
@@ -175,16 +191,20 @@
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .about-main .skills h2 {
-    padding-bottom: 20px;
-    text-decoration: underline orange;
+    padding-bottom: 35px;
+    padding-left: 10px;
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: orange;
+    text-decoration-thickness: 1px;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 28px;
+    font-size: 1.8rem;
 }
 
 .about-main .skills ul li {
@@ -195,41 +215,45 @@
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .about-main h2 {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 28px;
+    font-size: 1.8rem;
     padding-left: 30px;
-    text-decoration: underline orange;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
 }
 
 .projects .proj {
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 30px;
-    height: 180px;
-    width: 300px;
+    height: 10.25rem;
+    width: 16.75rem;
     border: 2px solid orange;
     border-radius: 10px;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     justify-content: space-evenly;
+    padding-bottom: 80px;
 }
 
-.proj img{
-    width: 300px;
+
+.proj img {
+    width: 16.75rem;
     border-radius: 10px 10px 0 0;
 }
 
-.details{
+.details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,43 +262,209 @@
 .details a {
     text-decoration: none;
     color: orange;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
 }
 
-.ham{
-  position: absolute; 
-    top: 8px;
-    left: 8px;
-    z-index: 1;
+.hamburger {
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
 }
 
-.cross{
-   position: absolute; 
-   top: 8px;
-   left: 140px;
-   z-index: 1;
+.ham {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-/* @media (max-width: 1130px){
-    .information{
-        display: flex;
+.cross {
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+
+.side-go {
+    position: absolute;
+    transform: translate(-170px, 0px);
+}
+
+.services-main{
+    margin: 30px 40px
+} 
+
+.service-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px  100px;
+
+}
+
+.service{
+    height: 200px;
+    width: 450px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    margin: 50px;
+    box-shadow: 0 2px 2px 0 orange, 0 3px 8px 0 orange;
+}
+
+.services-main h1{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: red;
+    text-underline-offset: 6px;
+
+}
+
+.service h2{
+    color: orangered;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: red;
+    text-underline-offset: 6px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3rem;
+
+}
+
+.cv button{
+    background-color:#125eeb;
+    width: 92px;
+    height: 40px;
+    position: absolute;
+    bottom: 190px;
+    right: 87px;
+    border-radius: 15px;
+    border: 1px solid orange;
+}
+
+.cv button a{
+    text-decoration: none;
+    color: white;
+}
+
+.service p{
+    margin: 25px 10px;
+    text-align: justify;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+.services-main h1{
+    color: orange;
+}
+
+@media (max-width: 1300){
+    .about-main{
+        width: 80%;
+    }
+
+    .services-main h1{
+        margin: auto auto;
+    }
+
+    .service-desc{
+        flex-direction: column;
+    }
+}
+@media (max-width:550px) {
+    .about-main {
+        width: 80%;
+        margin: 10px 15px 10px 50px;
+        text-align: justify;
+        
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .services-main h1{
+        margin: auto auto;
+    }
+
+    .service-desc{
         flex-direction: column;
     }
 }
 
-@media (max-width: 1130px){
+@media (max-width: 450px) {
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        padding-right: 10px;
+    }
+    .cv button{
+        
+    }
+    .information .intro {
+        text-align: center;
+    }
+
+    .information .name {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .information .desc {
+        text-align: center;
+    }
+
+    .navbar-side {
+        display: flex;
+        z-index: 99;
+    }
+
+    .about-main {
+        margin: 10px 15px 10px 50px;
+        overflow-x: hidden;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+    }
+    .services-main h1{
+        margin: auto auto;
+    }
+
+    .service-desc{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 855px) {
     .projects{
-        display: grid;
-        grid-template-columns: 150px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .projects .proj{
-        margin-left: 10px;
-    } */
-    /* .navbar-side{
-        width: 100px;
+    .services-main h1{
+        margin: auto auto;
     }
 
-    .about-main{
-        margin-left: 100px;
-    } */
+    .service-desc{
+        flex-direction: column;
+    }
+
 }
